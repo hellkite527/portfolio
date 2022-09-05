@@ -1,24 +1,24 @@
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
 
-export default function Projects({key, proj}) {
+export default function Projects({proj}) {
   let projHeader;       
 
   if (proj.url != '') {
-    projHeader = <Card.Title><Card.Link href={proj.url} target="_blank">{proj.name} <i class="bi bi-box-arrow-up-right"></i></Card.Link></Card.Title>
+    projHeader = <Card.Title className="mb-0"><Card.Link href={proj.url} target="_blank">{proj.name} <i className="bi bi-box-arrow-up-right"></i></Card.Link></Card.Title>
   } else {
-    projHeader = <Card.Title>{proj.name}</Card.Title>
+    projHeader = <Card.Title className="mb-0">{proj.name}</Card.Title>
   }
 
   return (
-    <Card key={key} className='h-100'>
+    <Card className='h-100' key={proj.name} bg='dark' text='white'>
       <Card.Header>
         { projHeader }
       </Card.Header>
       <Card.Body>
         {
           proj.period.from != '' && proj.period.till != '' && <Card.Subtitle className="mb-3 text-muted">
-            <i class="bi bi-calendar3"></i> {proj.period.from} - {proj.period.till}
+            <i className="bi bi-calendar3"></i> {proj.period.from} - {proj.period.till}
           </Card.Subtitle>
         }
         <Card.Text style={{ whiteSpace: 'pre-line' }}>

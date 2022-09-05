@@ -1,3 +1,25 @@
+export const personalData = {
+  dateOfBirth: 566434800000,
+  address: {
+    street:'In Der Maaswies 20',
+    city: 'Kirf',
+    postalCode: '54441',
+    country:'Germany',
+  },
+  contact: {
+    mobile: '+352-691251588',
+    email: 'vincent.pableo@gmail.com',
+  },
+}
+
+export const socialMedia ={
+  discord: 'https://discordapp.com/channels/@me/hellkite527#1559/',
+  facebook: 'https://www.facebook.com/hellkite527',
+  linkedin: 'https://www.linkedin.com/in/vincent-pableo-203893a3/',
+  twitter: 'https://twitter.com/Hellkite527_xiv',
+  github: 'https://github.com/hellkite527'
+}
+
 export const workExps = [
   {
     jobTitle:"Programmer Analyst",
@@ -88,7 +110,7 @@ export const workExps = [
       from:"12.2011",
       till: "10.2014"
     },
-    description: "- Responsible for maintaining and updating the company's existing websites.\n- Coordinated primarily with the marketing department for anything that can be featured on those websites.\n- I also coordinated with the marketing department in planning and designing marketing collaterals such as newsletter templates, and advertising giveaways.\n -Spearheaded renovating the website to the current standard which resulted in winning the International Property Awards for 2013 and 2014."
+    description: "- Responsible for maintaining and updating the company's existing websites.\n- Coordinated primarily with the marketing department for anything that can be featured on those websites.\n- I also coordinated with the marketing department in planning and designing marketing collaterals such as newsletter templates, and advertising giveaways.\n - Spearheaded renovating the website to the current standard which resulted in winning the International Property Awards for 2013 and 2014."
   },
   {
     jobTitle:"Web Developer / IT Specialist",
