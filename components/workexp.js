@@ -1,11 +1,15 @@
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-export default function Workexp({exp}) {
+function workCard(exp, index) {
   return (
-    <Card className='mb-3' bg='dark' text='white'>
+    <Card className='mb-3' bg='dark' text='white' key={`${index}-${exp.jobTitle}`}>
       <Card.Header>
-        <Card.Title className="mb-0">{exp.jobTitle}</Card.Title>
+        <Card.Title className="mb-0">
+          {exp.jobTitle}
+        </Card.Title>
       </Card.Header>
       <Card.Body>
         <Card.Subtitle className="mb-2 text-muted">
@@ -28,5 +32,18 @@ export default function Workexp({exp}) {
         </Card.Text>
       </Card.Body>
     </Card>
+  );
+}
+
+export default function Workexp({experiences}) {
+  return (
+    <Row>
+      <Col>
+        <h2 className="text-center my-4">Work Experiences</h2>
+        {
+          experiences.map((exp, index) => workCard(exp, index) )
+        }
+      </Col>
+    </Row>
   );
 }
