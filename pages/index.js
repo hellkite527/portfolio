@@ -41,7 +41,7 @@ class Home extends React.Component {
       <div>
         <MainNavigation navigation={navigationProps} />
   
-        <Container id="Home">
+        <Container id="Home" fluid>
           <Head>
             <title>Vincent Pableo</title>
             <meta name="description" content="Online portfolio of Vincent Pableo" />

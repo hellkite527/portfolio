@@ -8,7 +8,7 @@ function projCard(project,index) {
 
   if (project.url != '') {
     projHeader = (
-      <Card.Title className="mb-0">
+      <Card.Title className="mb-0 text-reset">
         <Card.Link href={project.url} target="_blank">
           {project.name} <i className="bi bi-box-arrow-up-right"></i>
         </Card.Link>
@@ -20,7 +20,7 @@ function projCard(project,index) {
 
   return (
     <Col xs={12} md={4} className="mb-4" key={`${index}-${project.name}`}>
-      <Card className='h-100' bg='dark' text='white'>
+      <Card className='h-100' bg='dark' text='white' border="light">
         <Card.Header>
           { projHeader }
         </Card.Header>
@@ -47,7 +47,7 @@ export default function Projects({projects}) {
   return (
     <Row >
       <Col>
-        <h2 className="text-center my-4">Projects</h2>
+        <h2 className="text-center my-4">Character Feats</h2>
         <Row>
           {
             projects.map((project,index) => projCard(project,index) )

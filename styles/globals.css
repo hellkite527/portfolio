@@ -18,14 +18,7 @@ a {
     color-scheme: dark;
   }
   body {
-    /* color: white; */
-    background: rgb(92, 91, 91);
+    color: #d5d5d5;
+    background: #080808;
   }
-}
-
-.vertically-center {
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }

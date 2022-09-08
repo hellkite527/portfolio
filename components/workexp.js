@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 function workCard(exp, index) {
   return (
-    <Card className='mb-3' bg='dark' text='white' key={`${index}-${exp.jobTitle}`}>
+    <Card className='mb-3' bg='dark' text='white' key={`${index}-${exp.jobTitle}`} border="light">
       <Card.Header>
         <Card.Title className="mb-0">
           {exp.jobTitle}
@@ -39,7 +39,7 @@ export default function Workexp({experiences}) {
   return (
     <Row>
       <Col>
-        <h2 className="text-center my-4">Work Experiences</h2>
+        <h2 className="text-center my-4">Character Class Growth</h2>
         {
           experiences.map((exp, index) => workCard(exp, index) )
         }
