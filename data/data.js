@@ -10,6 +10,7 @@ export const personalData = {
     mobile: '+352-691251588',
     email: 'vincent.pableo@gmail.com',
   },
+  skills: ['HTML5', 'CSS3', 'Javascript', 'ReactJS', 'Photoshop', 'MongoDB', 'NextJS', 'NodeJS', 'ES6', 'JSON', 'Github', 'DiscordJS']
 }
 
 export const navigation = ['Home', 'About', 'Experiences', 'Projects']

@@ -76,7 +76,7 @@ export const getStaticProps = async () => {
       workExpProps: workExps,
       projListProps: projList,
       socialProps: socialMedia,
-      navigationProps: navigation,
+      navigationProps: navigation
     }
   }
 }

@@ -10,7 +10,9 @@ export default function MainNavigation({navigation}) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {
-              navigation.map(nav => <Nav.Link href={`#${nav}`} key={`nav-${nav}`}>{nav}</Nav.Link>)
+              navigation.map(nav => 
+                <Nav.Link href={`#${nav}`} key={`nav-${nav}`}>{nav}</Nav.Link>
+              )
             }
           </Nav>
         </Navbar.Collapse>
