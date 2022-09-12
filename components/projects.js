@@ -36,7 +36,7 @@ function projCard(project,index) {
           </Card.Text>
 
           {
-            project.techStack.map(tech => <Badge className="me-1 mb-1 dark-accent-bg">{ tech }</Badge>)
+            project.techStack.map(tech => <Badge className="me-1 mb-1 dark-accent-bg" key={`${index}-${project.name}-${tech}`}>{ tech }</Badge>)
           }
         </Card.Body>
       </Card>
