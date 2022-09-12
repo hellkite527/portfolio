@@ -173,6 +173,16 @@ export const workExps = [
 
 export const projList = [
   {
+    name: "Online Portfolio",
+    url: "https://vincentpableo.vercel.app/",
+    period: {
+      from:"09.2022",
+      till: "present"
+    },
+    description: "Up-to-date online portfolio",
+    techStack: ["React Js", "NextJs", "Bootstrap 5", "React-Bootstrap", "SCSS", "ES6"]
+  },
+  {
     name: "Metrobank Command Centre",
     url:"",
     period: {
