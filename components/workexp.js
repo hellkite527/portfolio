@@ -6,24 +6,24 @@ import Nav from 'react-bootstrap/Nav';
 
 function workCard(exp, index) {
   return (
-    <Card className='mb-3' bg='dark' text='white' key={`${index}-${exp.jobTitle}`} border="light">
+    <Card className='workCard' key={`${index}-${exp.jobTitle}`}>
       <Card.Header>
         <Card.Title className="mb-0">
-          <i className="bi bi-journal-bookmark-fill text-info"></i> {exp.jobTitle}
+          <i className="bi bi-journal-bookmark-fill highlight"></i> {exp.jobTitle}
         </Card.Title>
       </Card.Header>
       <Card.Body>
-        <Card.Subtitle className="mb-2 text-muted">
+        <Card.Subtitle className="mb-2">
           <Nav className="flex-column flex-md-row">
-            <Nav.Item className='me-2 mb-2'>
-              <i className="bi bi-building text-info"></i> {exp.employer}
+            <Nav.Item className='me-3 mb-2'>
+              <i className="bi bi-building highlight"></i> {exp.employer}
             </Nav.Item>
-            <Nav.Item className='me-2 mb-2'>
-              <i className="bi bi-calendar3 text-info"></i> {exp.workPeriod.from} - {exp.workPeriod.till}
+            <Nav.Item className='me-3 mb-2'>
+              <i className="bi bi-calendar3 highlight"></i> {exp.workPeriod.from} - {exp.workPeriod.till}
             </Nav.Item>
             {
               exp.location.city != '' && exp.location.country != '' && <Nav.Item>
-                <i className="bi bi-globe text-info"></i> {exp.location.city}, {exp.location.country}
+                <i className="bi bi-globe highlight"></i> {exp.location.city}, {exp.location.country}
               </Nav.Item>
             }
           </Nav>
@@ -38,8 +38,8 @@ function workCard(exp, index) {
 
 export default function Workexp({experiences}) {
   return (
-    <Row>
-      <Col>
+    <Row id='Experiences' className='workExpBg'>
+      <Col className='py-5'>
         <h2 className="text-center my-4">Employment History</h2>
         <Container>
           <Row>

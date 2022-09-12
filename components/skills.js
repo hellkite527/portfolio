@@ -4,12 +4,12 @@ import Card from 'react-bootstrap/Card';
 export default function SkillCard({skills}) {
   return (
     <Col xs={12} md={{ span: 3, offset: 0 }}>
-      <Card bg='dark' border="light">
+      <Card className='listCard'>
         <Card.Body>
           <h3>Skill Proficiencies</h3>
           <Card.Text>
             {
-              skills.map(skill => <><i className="bi bi-check-circle text-info"></i> {skill} <br/> </> )
+              skills.map(skill => <><i className="bi bi-check-circle highlight"></i> {skill} <br/> </> )
             }
           </Card.Text>
           <Card.Text>

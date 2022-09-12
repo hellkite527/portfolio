@@ -38,10 +38,10 @@ class Home extends React.Component {
     );
 
     return (
-      <div>
+      <div id="Home">
         <MainNavigation navigation={navigationProps} />
   
-        <Container id="Home" fluid>
+        <Container fluid>
           <Head>
             <title>Vincent Pableo</title>
             <meta name="description" content="Online portfolio of Vincent Pableo" />
@@ -49,20 +49,14 @@ class Home extends React.Component {
           </Head>
   
           <Banner socialMedia={socialProps} />
-
-          { dividers('About') }
   
           <About />
 
-          { dividers('Experiences') }
-
           <Workexp experiences={workExpProps} />
-
-          { dividers('Projects') }
 
           <Projects projects={projListProps} />
 
-          <Footer />
+          <Footer socialMedia={socialProps} />
 
         </Container>
       </div>

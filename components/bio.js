@@ -16,9 +16,9 @@ export default function BioCard({dateOfBirth}) {
 
   return (
     <Col xs={12} md={{span: 2, offset: 1}} className='mb-3 mb-md-0'>
-      <Card bg='dark' border="light">
+      <Card className='listCard'>
         <Card.Body>
-          <Image className="rounded-circle img-thumbnail mb-3 border border-dark" src='/vincent-pableo.jpg' />
+          <Image className="profilePic" src='/vincent-pableo.jpg' />
           <Card.Text>
             <b>Name:</b> Vincent Pableo
             <br />

@@ -5,12 +5,12 @@ import Button from 'react-bootstrap/Button'
 export default function Banner({socialMedia}) {
   return (
     <Row>
-      <Col style={{ height: '100vh' }} className="text-center d-flex justify-content-center align-items-center">
+      <Col className="banner">
         <Row>
           <Col>
             <div className="mb-5">
               <h1 className="text-uppercase">
-                <b className="text-info">Greetings!</b> My name is Vincent Pableo<br />and I'm a front-end web developer
+                <b className="highlight">Greetings!</b> My name is Vincent Pableo<br />and I'm a front-end web developer
               </h1>
               <p className='fw-lighter fst-italic'>and also a geek and a nerd</p>
             </div>
@@ -18,7 +18,7 @@ export default function Banner({socialMedia}) {
               <Col>
                 {
                   socialMedia.map(media => (
-                    <Button key={`btn-${media.icon}`} variant="outline-light" href={media.url} target="_blank" className="me-2">
+                    <Button key={`btn-${media.icon}`} href={media.url} target="_blank" className="social-media-btn">
                       <i className={`bi bi-${media.icon}`}></i>
                     </Button>
                   ))
