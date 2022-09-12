@@ -10,15 +10,33 @@ export const personalData = {
     mobile: '+352-691251588',
     email: 'vincent.pableo@gmail.com',
   },
+  skills: ['HTML5', 'CSS3', 'Javascript', 'ReactJS', 'Photoshop', 'MongoDB', 'NextJS', 'NodeJS', 'ES6', 'JSON', 'Github', 'DiscordJS']
 }
 
-export const socialMedia ={
-  discord: 'https://discordapp.com/channels/@me/hellkite527#1559/',
-  facebook: 'https://www.facebook.com/hellkite527',
-  linkedin: 'https://www.linkedin.com/in/vincent-pableo-203893a3/',
-  twitter: 'https://twitter.com/Hellkite527_xiv',
-  github: 'https://github.com/hellkite527'
-}
+export const navigation = ['Home', 'About', 'Experiences', 'Projects']
+
+export const socialMedia = [
+  {
+    url: 'https://discordapp.com/channels/@me/hellkite527#1559/',
+    icon:'discord'
+  },
+  {
+    url: 'https://www.facebook.com/hellkite527',
+    icon:'messenger'
+  },
+  {
+    url:'https://www.linkedin.com/in/vincent-pableo-203893a3/',
+    icon:'linkedin'
+  },
+  {
+    url:'https://twitter.com/Hellkite527_xiv',
+    icon:'twitter'
+  },
+  {
+    url: 'https://github.com/hellkite527',
+    icon:'github'
+  }
+]
 
 export const workExps = [
   {
