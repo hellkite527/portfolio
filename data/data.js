@@ -28,10 +28,10 @@ export const socialMedia = [
     url:'https://www.linkedin.com/in/vincent-pableo-203893a3/',
     icon:'linkedin'
   },
-  {
-    url:'https://twitter.com/Hellkite527_xiv',
-    icon:'twitter'
-  },
+  // {
+  //   url:'https://twitter.com/Hellkite527_xiv',
+  //   icon:'twitter'
+  // },
   {
     url: 'https://github.com/hellkite527',
     icon:'github'
