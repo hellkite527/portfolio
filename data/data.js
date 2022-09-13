@@ -21,7 +21,7 @@ export const socialMedia = [
     icon:'discord'
   },
   {
-    url: 'https://www.facebook.com/hellkite527',
+    url: 'https://m.me/hellkite527',
     icon:'messenger'
   },
   {
