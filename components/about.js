@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -18,10 +19,10 @@ class About extends React.Component {
       <>
         <Row id="About">
           <Col className="about">
-            <div>
+            <Container>
               <Row>
                 <Col xs={12} className="text-center mb-3 mb-md-5">
-                  <h2>Character Profile</h2>
+                  <h2 className='mb-0'>Character Profile</h2>
                 </Col>
 
                 <BioCard dateOfBirth={dateOfBirth} />
@@ -31,7 +32,7 @@ class About extends React.Component {
                 <SkillCard skills={skills} />
 
               </Row>
-            </div>
+            </Container>
           </Col>
         </Row>
       </>

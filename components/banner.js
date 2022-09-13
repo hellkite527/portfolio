@@ -8,11 +8,11 @@ export default function Banner({socialMedia}) {
       <Col className="banner">
         <Row>
           <Col>
-            <div className="mb-5">
+            <div className="mb-4">
               <h1 className="text-uppercase">
-                <b className="highlight">Greetings!</b> My name is Vincent Pableo<br />and I&apos;m a front-end web developer
+                <b className='darkAccent'>Greetings!</b> My name is Vincent Pableo<br />and I&apos;m a front-end web developer
               </h1>
-              <p className='fw-lighter fst-italic'>and also a geek and a nerd</p>
+              <p className='fw-lighter fst-italic fs-3'>and also a geek and a nerd</p>
             </div>
             <Row>
               <Col>
