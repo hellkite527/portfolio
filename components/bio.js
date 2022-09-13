@@ -15,23 +15,18 @@ export default function BioCard({dateOfBirth}) {
   }
 
   return (
-    <Col xs={12} md={{span: 2, offset: 1}} className='mb-3 mb-md-0'>
-      <Card className='listCard'>
+    <Col xs={12} md={12} className='mb-3'>
+      <Card className='biocard'>
         <Card.Body>
-          <Image className="profilePic" src='/vincent-pableo.jpg' alt="Vincent Pableo" />
-          <Card.Text>
-            <b>Name:</b> Vincent Pableo
-            <br />
-            <b>Age:</b> { getAge(dateOfBirth) }
-            <br />
-            <b>Class:</b> Lv12 Front-End Developer
-            <br />
-            <b>EXP points:</b> 100,000
-            <br />
-            <b>Alignment:</b> Chaotic Good (<i className="bi bi-emoji-laughing-fill"></i>)
-            <br />
-            <b>Languages:</b> Filipino, English
-          </Card.Text>
+          <div className='bioAlign'>
+            <div>
+              <Image className="profilePic" src='/vincent-pableo.jpg' alt="Vincent Pableo" />
+            </div>
+            <div><b>Name:</b> Vincent Pableo</div>
+            <div><b>Age:</b> { getAge(dateOfBirth) }</div>
+            <div><b>Class:</b> Front-End Developer</div>
+            <div><b>Languages:</b> Filipino, English</div>
+          </div>
         </Card.Body>
       </Card>
     </Col>

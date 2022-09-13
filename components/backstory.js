@@ -4,12 +4,12 @@ import Button from 'react-bootstrap/Button';
 
 export default function BackstoryCard() {
   return (
-    <Col xs={12} md={{span: 5, offset: 0}} className='mb-3 mb-md-0'>
-      <Card className='listCard'>
+    <Col xs={12} md={7} className='mb-3 mb-md-0'>
+      <Card className='biocard'>
         <Card.Body>
           <h3>Backstory</h3>
           <Card.Text>
-            A front-end web developer based in the Philippines and does <span className='highlight'>Front-End Development, creating templates for sites or apps, and a touch of photo editing</span>. His journey in web development started back in 2009 and has been on it after 12 years. The career path that he chose has led him to into a very diverse choice of industries including <span className='highlight'>finance and real estate</span> as well as variety of projects such as <span className='highlight'>company websites, online banking, e-commerce websites</span> just to name a few.
+            A front-end web developer based in the Philippines and does <b className='highlight'>Front-End Development, creating templates for sites or apps, and a touch of photo editing</b>. His journey in web development started back in 2009 and has been on it after 12 years. The career path that he chose has led him to into a very diverse choice of industries including <b className='highlight'>finance and real estate</b> as well as variety of projects such as <b className='highlight'>company websites, online banking, e-commerce websites</b> just to name a few.
           </Card.Text>
           <Card.Text>
             Outside of his profession, he does immerse himself with some activities with his trusty friends that promotes cooperation such as D&amp;D or video games.

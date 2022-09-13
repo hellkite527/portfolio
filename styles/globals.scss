@@ -1,9 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 
-$highlight: #00f7ff;
-$dark-accent: #003d3f;
-$white: #d5d5d5;
-$black: #080808;
+$color1: #7DE2D1;
+$color2: #339989;
+$color3: #2B2C28;
+$white: #FFFAFB;
+$black: #131515;
 
 @mixin background-opacity($color, $opacity: 0.3) {
   background: $color; /* The Fallback */
@@ -14,12 +15,8 @@ $black: #080808;
   color: rgba($color, $opacity);
 }
 
-@mixin propertyHighlightColor($input) {
-  #{$input}: $highlight !important;
-}
-
-@mixin propertyDarkAccentColor($input) {
-  #{$input}: $dark-accent !important;
+@mixin propertyColor($input, $value) {
+  #{$input}: $value !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,27 +33,27 @@ html {
   scroll-behavior: smooth;
 }
 
-.highlight{
-  color: $highlight;
+.darkAccent{
+  color: $color2;
 
   &-bg {
-    @include propertyHighlightColor(background-color);
+    @include propertyColor(background-color, $color2);
   }
 
   &-border {
-    @include propertyHighlightColor(border-color);
+    @include propertyColor(border-color, $color2);
   }
 }
 
-.dark-accent{
-  color: $dark-accent;
+.highlight{
+  color: $color1;
 
   &-bg {
-    @include propertyDarkAccentColor(background-color);
+    @include propertyColor(background-color, $color1);
   }
 
   &-border {
-    @include propertyDarkAccentColor(border-color);
+    @include propertyColor(border-color, $color1);
   }
 }
 
@@ -74,45 +71,20 @@ html {
 .backgroundSettings {
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 .listCard {
   @extend .border;
   @extend .border-dark;
-
-  @include background-opacity($black, 0.4);
-
   color: $white;
-}
-
-.workCard {
-  @extend .mb-3;
-
-  @extend .listCard;
-}
-
-.projectCard {
-  @extend .h-100;
-
-  @extend .listCard;
-
-  a {
-    @extend .link-light;
-
-    text-decoration: none;
-  }
 }
 
 .portfolio-nav{
   @extend .navbar-expand-lg;
   @extend .navbar-dark;
   @extend .sticky-top;
-}
 
-.portfolio-nav, .footer {
-  background-image: url("../public/nav-footer-bg.png");
-  background-repeat: repeat;
+  background-color: $black;
 }
 
 .banner {
@@ -133,10 +105,21 @@ html {
   background-color: transparent;
 
   &:hover {
-    color: $highlight;
-    border-color: $highlight;
-    background-color: $dark-accent;
+    color: $white;
+    border-color: $color2;
+    background-color: $color1;
   }
+
+  &:active, &:focus {
+    color: $white;
+    border-color: $color2;
+    background-color: $color2;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba($color1, 0.5) !important;
+  }
+  
 
   .footer-social &:last-child {
     @extend .me-0;
@@ -144,46 +127,105 @@ html {
 }
 
 .about {
-  @extend .font-monospace;
-
   @extend .fullWindowContainer;
-  @extend .backgroundSettings;
 
-  background-image: url("../public/about-bg.jpg");
+  background-color: $color2;
+  color: $white;
 
   .profilePic {
     @extend .rounded-circle;
-    @extend .img-thumbnail;
     @extend .mb-3;
+    @extend .mb-md-0;
     @extend .border;
     @extend .border-dark;
+
+    height: auto;
+    max-width: 100%;
+
+    @include media-breakpoint-up(md) {
+      max-width: 80px;
+    }
   }
 
   .cv-btn {
-    @extend .highlight;
-    border-color: $highlight;
+    color: $white;
+    border-color: $white;
 
     &:hover{
-      @include background-opacity($dark-accent, 0.8);
-
+      background-color: $color2;
       color: $white;
+      border-color: $color2;
+    }
+
+    &:active, &:focus {
+      color: $white;
+      border-color: $color2;
+      background-color: $color2;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba($color2, 0.5) !important;
     }
   }
 }
 
-.workExpBg, .projListBg {
-  @extend .backgroundSettings;
+.biocard {
+  color: $white;
+  background-color: $color3;
+
+  .bioAlign {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .align-items-md-center;
+
+    border: 0 !important;
+    background-color: transparent !important;
+    color: $white !important;
+
+    @include media-breakpoint-up(md) {
+      @extend .flex-md-row;
+    }
+
+    & > div {
+      @extend .px-md-3;
+    }
+  }
 }
 
+
 .workExpBg {
-  background-image: url("../public/work-exp-bg.jpg");
+  background-color: $black;
+}
+
+.workCard {
+  @extend .mb-3;
+
+  @extend .listCard;
+
+  background-color: $color3;
 }
 
 .projListBg {
-  background-image: url("../public/project-list-bg.jpg");
+  background-color: $color3;
+}
+
+.projectCard {
+  @extend .h-100;
+
+  @extend .listCard;
+
+  background-color: $black;
+
+  a {
+    @extend .link-light;
+
+    text-decoration: none;
+  }
 }
 
 .footer {
   @extend .py-5;
   @extend .text-center;
+
+  background-color: $black;
 }
