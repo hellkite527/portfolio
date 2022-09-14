@@ -3,6 +3,8 @@
 $color1: #7DE2D1;
 $color2: #339989;
 $color3: #2B2C28;
+$color4: #00564d;
+$color5: #767676;
 $white: #FFFAFB;
 $black: #131515;
 
@@ -57,6 +59,19 @@ html {
   }
 }
 
+.gray {
+  color: $color5;
+
+  &-bg {
+    @include propertyColor(background-color, $color5);
+  }
+
+  &-border {
+    @include propertyColor(border-color, $color5);
+  }
+
+}
+
 .windowHeight {
   min-height: 100vh;
 }
@@ -85,6 +100,14 @@ html {
   @extend .sticky-top;
 
   background-color: $black;
+
+  a {
+    color: $white;
+
+    &:hover, &.active {
+      color: $color1 !important;
+    }
+  }
 }
 
 .banner {
@@ -129,7 +152,7 @@ html {
 .about {
   @extend .fullWindowContainer;
 
-  background-color: $color2;
+  background-color: $color4;
   color: $white;
 
   .profilePic {
@@ -206,7 +229,8 @@ html {
 }
 
 .projListBg {
-  background-color: $color3;
+  background-color: $color4;
+  color: $white;
 }
 
 .projectCard {
@@ -214,7 +238,7 @@ html {
 
   @extend .listCard;
 
-  background-color: $black;
+  background-color: $color3;
 
   a {
     @extend .link-light;
