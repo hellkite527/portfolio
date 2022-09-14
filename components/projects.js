@@ -11,12 +11,12 @@ function projCard(project,index) {
     projHeader = (
       <Card.Title className="mb-0 text-reset">
         <Card.Link href={project.url} target="_blank">
-        <i className="bi bi-journal-code highlight"></i> {project.name} <i className="bi bi-box-arrow-up-right"></i>
+        <i className="bi bi-journal-code gray"></i> {project.name} <i className="bi bi-box-arrow-up-right"></i>
         </Card.Link>
       </Card.Title>
     )
   } else {
-    projHeader = <Card.Title className="mb-0"><i className="bi bi-journal-code highlight"></i> {project.name}</Card.Title>
+    projHeader = <Card.Title className="mb-0"><i className="bi bi-journal-code gray"></i> {project.name}</Card.Title>
   }
 
   return (
@@ -28,7 +28,7 @@ function projCard(project,index) {
         <Card.Body>
           {
             project.period.from != '' && project.period.till != '' && <Card.Subtitle className="mb-3">
-              <i className="bi bi-calendar3 highlight"></i> {project.period.from} - {project.period.till}
+              <i className="bi bi-calendar3 gray"></i> {project.period.from} - {project.period.till}
             </Card.Subtitle>
           }
           <Card.Text style={{ whiteSpace: 'pre-line' }}>
