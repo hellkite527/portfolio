@@ -11,13 +11,27 @@ export const bioData = {
 
 export const projectsData = [
   {
+    name: 'Community Tracker Mobile',
+    url: '',
+    period: {
+      from: '01.2023',
+      till: 'present',
+    },
+    description: 'Internal project to be used for employees and managers alike while being bench status.',
+    techStack: [
+      'React Native',
+      'Typescript',
+      'React Query',
+    ],
+  },
+  {
     name: 'Online Portfolio',
     url: 'https://vincentpableo.vercel.app/',
     period: {
       from: '09.2022',
       till: 'present',
     },
-    description: 'Up-to-date online portfolio',
+    description: 'Up-to-date online portfolio.',
     techStack: [
       'React Js',
       'NextJs',
@@ -25,6 +39,7 @@ export const projectsData = [
       'React-Bootstrap',
       'SCSS',
       'ES6',
+      'Typescript',
     ],
   },
   {
@@ -35,7 +50,7 @@ export const projectsData = [
       till: '07.2022',
     },
     description:
-      "The back office application  for the bank's online banking application. A member of a 10-14 man developer team.",
+      "The back office application  for the bank's online banking application. A member of a 10-14 man developer team. No longer part of the project after June 2022.",
     techStack: [
       'React Js',
       'Redux',
@@ -82,7 +97,7 @@ export const projectsData = [
       till: '06.2017',
     },
     description:
-      'An e-commerce website that caters mainly on heavy equipment and related services. A member of around 10-14 man developer team. No longer part of the project after June 20',
+      'An e-commerce website that caters mainly on heavy equipment and related services. A member of around 10-14 man developer team. No longer part of the project after June 20.',
     techStack: ['HTML5', 'CSS3', 'SCSS', 'jQuery', 'Bootstrap', 'PHP'],
   },
   {
@@ -145,6 +160,8 @@ export const skillsData = [
   'CSS3',
   'Javascript',
   'ReactJS',
+  'TypeScript',
+  'React Native',
   'Photoshop',
   'MongoDB',
   'NextJS',
@@ -175,6 +192,20 @@ export const socialMediaData = [
 ];
 
 export const workExperiencesData = [
+  {
+    jobTitle: 'Software Engineer',
+    employer: 'Cognizant',
+    location: {
+      city: 'Makati',
+      country: 'Philippines',
+    },
+    workPeriod: {
+      from: '12.2022',
+      till: 'present',
+    },
+    description:
+      '- Creating clean and manageable code using modern techstack and  industrial grade best practices',
+  },
   {
     jobTitle: 'Programmer Analyst',
     employer: 'Metrobank',
