@@ -1,5 +1,5 @@
 import {AppProvider} from 'providers/AppProvider';
-import {PortfolioPage} from '../components/page';
+import {PortfolioPage} from 'components/page';
 
 const Home = () => {
   return (

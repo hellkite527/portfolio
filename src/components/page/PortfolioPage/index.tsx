@@ -1,9 +1,13 @@
-import {Container} from 'react-bootstrap';
-
 import {navigation} from 'constants/navigation';
+import {Container} from 'components/atoms';
 import {HeadTag} from 'components/molecules';
 import {Banner, NavBar} from 'components/organisms';
-import {About, Footer, Projects, WorkExperience} from 'components/templates';
+import {
+  AboutTemplate,
+  FooterTemplate,
+  ProjectsTemplate,
+  WorkExperienceTemplate
+} from 'components/templates';
 
 export const PortfolioPage = () => {
   return (
@@ -12,10 +16,10 @@ export const PortfolioPage = () => {
       <Container fluid>
         <HeadTag />
         <Banner />
-        <About />
-        <WorkExperience />
-        <Projects />
-        <Footer />
+        <AboutTemplate />
+        <WorkExperienceTemplate />
+        <ProjectsTemplate />
+        <FooterTemplate />
       </Container>
     </div>
   )

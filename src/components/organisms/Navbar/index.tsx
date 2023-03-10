@@ -6,7 +6,7 @@ type NavBarProps = {
   navigation: string[];
 }
 
-export const NavBar = (navigation: NavBarProps) => {
+export const NavBar = ({navigation}: NavBarProps) => {
   return (
     <Navbar className='portfolio-nav'>
       <Container fluid>

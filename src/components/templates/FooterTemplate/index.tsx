@@ -2,7 +2,7 @@ import {useUserProvider} from 'providers/UserProvider';
 import {Col, Row} from 'components/atoms';
 import {SocialMedia} from 'components/organisms';
 
-export const Footer = () => {
+export const FooterTemplate = () => {
   const {socialMediaContext, bioInformationContext} = useUserProvider();
   const currentYear = new Date().getFullYear();
 

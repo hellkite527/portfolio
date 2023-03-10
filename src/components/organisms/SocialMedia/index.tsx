@@ -5,7 +5,7 @@ type SocialMediaProps = {
   socialMedia: SocialMedias[] | undefined;
 }
 
-export const SocialMedia = (socialMedia: SocialMediaProps) => {
+export const SocialMedia = ({socialMedia}: SocialMediaProps) => {
   return (
     <>
       { Array.isArray(socialMedia) && socialMedia.map((media: SocialMedias, index: number) => (

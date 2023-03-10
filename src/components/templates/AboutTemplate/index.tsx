@@ -3,7 +3,7 @@ import {Col, Container, Row} from 'components/atoms';
 import {BioCard, SkillCard} from 'components/molecules';
 import {BackstoryCard} from 'components/organisms';
 
-export const About = () => {
+export const AboutTemplate = () => {
   const {bioInformationContext, skillsContext} = useUserProvider();
 
   return (
