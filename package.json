@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "standard",
     "prettier": "prettier --check \"src/**/*.{js,jsx,json,md}\""
   },
   "dependencies": {
@@ -15,7 +15,7 @@
     "bootstrap-icons": "^1.9.1",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
-    "next": "12.2.5",
+    "next": "^14.2.13",
     "react": "18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
@@ -24,10 +24,12 @@
   },
   "devDependencies": {
     "@types/node": "^18.14.6",
-    "eslint": "8.23.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "eslint": "^9.11.1",
     "eslint-config-next": "12.2.5",
     "husky": "^8.0.3",
     "prettier": "^2.8.4",
+    "standard": "^17.1.2",
     "typescript": "^4.9.5"
   },
   "husky": {
@@ -39,6 +41,16 @@
     "src/**/*.{js,jsx,json,md}": [
       "prettier --write",
       "git add"
+    ]
+  },
+  "standard": {
+    "parser": "@typescript-eslint/parser",
+    "ignore": [
+      "build",
+      "public"
+    ],
+    "plugins": [
+      "@typescript-eslint"
     ]
   }
 }
