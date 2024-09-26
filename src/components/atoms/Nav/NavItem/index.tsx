@@ -9,12 +9,10 @@ export type NavItemProps = BsNavItemProps & {
 }
 
 // Create the NavItem atom component
-const NavItem: React.FC<NavItemProps> = ({ children, eventKey, onSelect, ...rest }) => {
+export const NavItem: React.FC<NavItemProps> = ({ children, eventKey, onSelect, ...rest }) => {
   return (
     <DefaultNav.Item eventKey={eventKey} onSelect={onSelect} {...rest}>
       {children}
     </DefaultNav.Item>
   )
 }
-
-export default NavItem
