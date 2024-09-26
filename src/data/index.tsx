@@ -189,7 +189,7 @@ export const socialMediaData = [
     url: 'https://github.com/hellkite527',
     icon: 'github'
   }
-];
+]
 
 export const workExperiencesData = [
   {
