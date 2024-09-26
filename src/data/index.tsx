@@ -188,7 +188,7 @@ export const socialMediaData = [
   {
     url: 'https://github.com/hellkite527',
     icon: 'github'
-  },
+  }
 ];
 
 export const workExperiencesData = [
@@ -204,7 +204,7 @@ export const workExperiencesData = [
       till: 'present'
     },
     description:
-      '- Creating clean and manageable code using modern techstack and  industrial grade best practices',
+      '- Creating clean and manageable code using modern techstack and  industrial grade best practices'
   },
   {
     jobTitle: 'Programmer Analyst',
@@ -218,7 +218,7 @@ export const workExperiencesData = [
       till: '07.2022'
     },
     description:
-      '- Create pages/solutions using React and React Boilerplate.\n- Create user friendly API with loopback as middleware being part of security measures.\n- Making sure that the codes adhere to the company standards.\n- Create unit tests for each new/existing page.\n- Preparing documents for both production and non-production environments',
+      '- Create pages/solutions using React and React Boilerplate.\n- Create user friendly API with loopback as middleware being part of security measures.\n- Making sure that the codes adhere to the company standards.\n- Create unit tests for each new/existing page.\n- Preparing documents for both production and non-production environments'
   },
   {
     jobTitle: 'Front End Developer',
@@ -232,7 +232,7 @@ export const workExperiencesData = [
       till: '02.2019'
     },
     description:
-      '- Website development/maintenance and support\n- HTML emailing development and testing\n- Team interfacing for supporting and testing.',
+      '- Website development/maintenance and support\n- HTML emailing development and testing\n- Team interfacing for supporting and testing.'
   },
   {
     jobTitle: 'Front End Web Developer',
@@ -246,7 +246,7 @@ export const workExperiencesData = [
       till: '06.2018'
     },
     description:
-      '- Freelance project for a coaching web application.\n- Responsible for new web pages passed by the designer.\n- Ensuring that the created pages are also fluid when viewed in smaller screen sizes.',
+      '- Freelance project for a coaching web application.\n- Responsible for new web pages passed by the designer.\n- Ensuring that the created pages are also fluid when viewed in smaller screen sizes.'
   },
   {
     jobTitle: 'Front End Web Developer',
@@ -260,7 +260,7 @@ export const workExperiencesData = [
       till: '06.2017'
     },
     description:
-      '- Responsible for developing and maintaining any front-end related tasks for the project.\n- Tasks mentioned range from adding a minor feature, bug fixing to something big like updating the look of the website.\n - Coordinated with the designer as well as the product manager to plan, strategize and update one another with the tasks at hand.',
+      '- Responsible for developing and maintaining any front-end related tasks for the project.\n- Tasks mentioned range from adding a minor feature, bug fixing to something big like updating the look of the website.\n - Coordinated with the designer as well as the product manager to plan, strategize and update one another with the tasks at hand.'
   },
   {
     jobTitle: 'Front End Web Developer',
@@ -274,7 +274,7 @@ export const workExperiencesData = [
       till: '12.2015'
     },
     description:
-      '- Responsible for developing the ImFree Dashboard for internal use.\n- Coordinated with the data analysts in order to get the necessary inputs, manipulate the said input resulting in a much simpler visual representation for non-technical users.\n- Strategized the project progression through daily standups and weekly meetings.',
+      '- Responsible for developing the ImFree Dashboard for internal use.\n- Coordinated with the data analysts in order to get the necessary inputs, manipulate the said input resulting in a much simpler visual representation for non-technical users.\n- Strategized the project progression through daily standups and weekly meetings.'
   },
   {
     jobTitle: 'UI Engineer',
@@ -288,7 +288,7 @@ export const workExperiencesData = [
       till: '04.2015'
     },
     description:
-      '- Responsible for maintaining and updating the UI of its existing websites.\n- Coordinates with fellow developers for some task that may require more than one developer.\n - Coordinated with the designer to make sure that the assets used are within the latest web standards.',
+      '- Responsible for maintaining and updating the UI of its existing websites.\n- Coordinates with fellow developers for some task that may require more than one developer.\n - Coordinated with the designer to make sure that the assets used are within the latest web standards.'
   },
   {
     jobTitle: 'Web Developer',
@@ -330,7 +330,7 @@ export const workExperiencesData = [
       till: '07.2010'
     },
     description:
-      '- Responsible for maintaining the current website\n- Single-handedly do the  design and development for a product website',
+      '- Responsible for maintaining the current website\n- Single-handedly do the  design and development for a product website'
   },
   {
     jobTitle: 'Junior Programmer',
