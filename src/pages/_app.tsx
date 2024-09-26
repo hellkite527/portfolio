@@ -1,13 +1,13 @@
-import {useEffect} from 'react';
-import Head from 'next/head';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useEffect } from 'react'
+import Head from 'next/head'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/index.scss'
 
-function MyApp({Component, pageProps}: any) {
+function MyApp ({ Component, pageProps }: any) {
   useEffect(() => {
-    require('bootstrap/dist/js/bootstrap.bundle.min.js');
-  }, []);
+    require('bootstrap/dist/js/bootstrap.bundle.min.js')
+  }, [])
 
   return (
     <>
@@ -16,7 +16,7 @@ function MyApp({Component, pageProps}: any) {
       </Head>
       <Component {...pageProps} />
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

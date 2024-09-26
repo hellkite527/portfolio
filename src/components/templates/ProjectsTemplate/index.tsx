@@ -1,10 +1,10 @@
-import {ProjectsHandled} from "models/data";
-import {useUserProvider} from "providers/UserProvider";
-import {Col, Container, Row} from "components/atoms";
-import {ProjectCard} from "components/organisms";
+import { ProjectsHandled } from 'models/data'
+import { useUserProvider } from 'providers/UserProvider'
+import { Col, Container, Row } from 'components/atoms'
+import { ProjectCard } from 'components/organisms'
 
 export const ProjectsTemplate = () => {
-  const {projectsHandledContext} = useUserProvider()
+  const { projectsHandledContext } = useUserProvider()
   return (
     <Row id='Projects' className='projListBg'>
       <Col className='py-5'>
@@ -15,11 +15,11 @@ export const ProjectsTemplate = () => {
               Array.isArray(projectsHandledContext) &&
               projectsHandledContext.map((
                 project: ProjectsHandled, index: number
-              ) => <ProjectCard project={project} index={index} />)
+              ) => <ProjectCard key={index} project={project} index={index} />)
             }
           </Row>
         </Container>
       </Col>
     </Row>
-  );
-};
+  )
+}

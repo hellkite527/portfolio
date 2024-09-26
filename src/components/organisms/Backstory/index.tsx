@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, CardText, Col } from "components/atoms";
+import { Button, Card, CardBody, CardText, Col } from 'components/atoms'
 
 export const BackstoryCard = () => {
   return (
@@ -35,12 +35,12 @@ export const BackstoryCard = () => {
               rel='noopener noreferrer'
               href='https://drive.google.com/file/d/1p6727BmUOfGjw83IKEfDZCb_4mNlBa8r/view?usp=sharing'
             >
-              <i className='bi bi-file-earmark-pdf-fill'></i> Get a copy of the
+              <i className='bi bi-file-earmark-pdf-fill' /> Get a copy of the
               character sheet (Download resume)
             </Button>
           </div>
         </CardBody>
       </Card>
     </Col>
-  );
+  )
 }

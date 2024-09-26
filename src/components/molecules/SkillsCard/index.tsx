@@ -1,4 +1,4 @@
-import {Card, CardBody, CardText, Col, Row} from "components/atoms";
+import { Card, CardBody, CardText, Col, Row } from 'components/atoms'
 
 type SkillCardProps = {
   skills: string[] | undefined;
@@ -15,7 +15,7 @@ export const SkillCard = (skills: SkillCardProps) => {
             {Array.isArray(skills) && skills.map((skill: string) => (
               <Col key={`skill-${skill}`} xs={12} md={6}>
                 <CardText>
-                  <i className='bi bi-check-circle highlight'></i> - {skill}
+                  <i className='bi bi-check-circle highlight' /> - {skill}
                 </CardText>
               </Col>
             ))}
@@ -30,5 +30,5 @@ export const SkillCard = (skills: SkillCardProps) => {
         </CardBody>
       </Card>
     </Col>
-  );
+  )
 }

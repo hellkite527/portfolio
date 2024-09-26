@@ -1,7 +1,7 @@
 import {
   Image as DefaultImage,
   ImageProps as DefaultImageProps
-} from "react-bootstrap";
+} from 'react-bootstrap'
 
 export type ImageProps = DefaultImageProps;
 

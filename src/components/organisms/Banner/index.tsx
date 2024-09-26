@@ -1,9 +1,9 @@
-import {useUserProvider} from 'providers/UserProvider';
-import {Col, Row} from 'components/atoms';
-import {SocialMedia} from '../SocialMedia';
+import { useUserProvider } from 'providers/UserProvider'
+import { Col, Row } from 'components/atoms'
+import { SocialMedia } from '../SocialMedia'
 
 export const Banner = () => {
-  const {socialMediaContext, bioInformationContext} = useUserProvider();
+  const { socialMediaContext, bioInformationContext } = useUserProvider()
 
   return (
     <Row>
@@ -29,5 +29,5 @@ export const Banner = () => {
         </Row>
       </Col>
     </Row>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import {getAge} from 'utils';
-import {Card, CardBody, Col, Image} from 'components/atoms';
+import { getAge } from 'utils'
+import { Card, CardBody, Col, Image } from 'components/atoms'
 
 export const BioCard = (dateOfBirth: any) => {
   return (
@@ -24,11 +24,11 @@ export const BioCard = (dateOfBirth: any) => {
               <b>Class:</b> Front-End Developer
             </div>
             <div>
-              <b>Languages:</b> 
+              <b>Languages:</b>
             </div>
           </div>
         </CardBody>
       </Card>
     </Col>
-  );
+  )
 }

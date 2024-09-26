@@ -1,12 +1,12 @@
-import {Navbar} from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap'
 
-import {Container, Nav, NavLink} from 'components/atoms';
+import { Container, Nav, NavLink } from 'components/atoms'
 
 type NavBarProps = {
   navigation: string[];
 }
 
-export const NavBar = ({navigation}: NavBarProps) => {
+export const NavBar = ({ navigation }: NavBarProps) => {
   return (
     <Navbar className='portfolio-nav'>
       <Container fluid>
@@ -24,5 +24,5 @@ export const NavBar = ({navigation}: NavBarProps) => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import {useUserProvider} from 'providers/UserProvider';
-import {Col, Container, Row} from 'components/atoms';
-import {BioCard, SkillCard} from 'components/molecules';
-import {BackstoryCard} from 'components/organisms';
+import { useUserProvider } from 'providers/UserProvider'
+import { Col, Container, Row } from 'components/atoms'
+import { BioCard, SkillCard } from 'components/molecules'
+import { BackstoryCard } from 'components/organisms'
 
 export const AboutTemplate = () => {
-  const {bioInformationContext, skillsContext} = useUserProvider();
+  const { bioInformationContext, skillsContext } = useUserProvider()
 
   return (
     <Row id='About'>
@@ -22,5 +22,5 @@ export const AboutTemplate = () => {
         </Container>
       </Col>
     </Row>
-  );
-};
+  )
+}

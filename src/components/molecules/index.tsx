@@ -1,3 +1,3 @@
-export * from './Bio';
-export * from './HeadTag';
-export * from './SkillsCard';
+export * from './Bio'
+export * from './HeadTag'
+export * from './SkillsCard'

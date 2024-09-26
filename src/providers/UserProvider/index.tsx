@@ -1,2 +1,2 @@
-export * from './UserProvider';
-export * from './useUserProvider';
+export * from './UserProvider'
+export * from './useUserProvider'

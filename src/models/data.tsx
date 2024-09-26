@@ -7,7 +7,7 @@ export type BioInformation = {
   },
   languages: string;
   cvLink: string;
-};
+}
 
 export type ProjectsHandled = {
   name: string;
@@ -37,4 +37,4 @@ export type WorkExperience = {
     till: string;
   },
   description: string;
-};
+}

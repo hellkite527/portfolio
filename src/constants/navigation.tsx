@@ -1,1 +1,1 @@
-export const navigation = ['Home', 'About', 'Experiences', 'Projects'];
+export const navigation = ['Home', 'About', 'Experiences', 'Projects']

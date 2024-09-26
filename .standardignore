@@ -1,0 +1,4 @@
+# .standardignore
+node_modules/
+dist/
+build/

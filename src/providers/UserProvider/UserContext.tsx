@@ -1,5 +1,5 @@
-import {createContext} from 'react';
-import { BioInformation, ProjectsHandled, SocialMedias, WorkExperience } from 'models/data';
+import { createContext } from 'react'
+import { BioInformation, ProjectsHandled, SocialMedias, WorkExperience } from 'models/data'
 
 export interface UserContextProps {
   bioInformationContext: BioInformation | undefined;
@@ -11,4 +11,4 @@ export interface UserContextProps {
 
 export const UserContext = createContext<UserContextProps | undefined>(
   undefined
-);
+)
