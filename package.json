@@ -25,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^18.14.6",
     "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
     "eslint": "^9.11.1",
     "eslint-config-next": "12.2.5",
     "husky": "^8.0.3",
@@ -45,12 +46,23 @@
   },
   "standard": {
     "parser": "@typescript-eslint/parser",
-    "ignore": [
-      "build",
-      "public"
-    ],
     "plugins": [
       "@typescript-eslint"
-    ]
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "ignore": [
+      "node_modules",
+      "dist",
+      "build"
+    ],
+    "globals": {
+      "React": true
+    }
+  },
+  "globals": {
+    "React": "writable"
   }
 }
