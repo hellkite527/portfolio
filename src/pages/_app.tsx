@@ -6,7 +6,7 @@ import '../styles/index.scss'
 
 function MyApp ({ Component, pageProps }: any) {
   useEffect(() => {
-    // Dynamically import Bootstrap's JS bundle to avoid SSR issues
+    // @ts-expect-error: Bootstrap JS doesn't have TypeScript declarations
     import('bootstrap/dist/js/bootstrap.bundle.min.js')
       .then(() => {
         console.log('Bootstrap JS loaded successfully')
